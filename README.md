@@ -32,10 +32,10 @@ For any given string we seek to score, we count the number of (potentially overl
 So for example, here are several strings scored using that contribution map:
 
 ~~~ text
-"" : 0
-"aaa" : 3 (1 + 1 + 1)
+     "" : 0
+  "aaa" : 3  (1 + 1 + 1)
 "abbaa" : 15 (1 - 3 - 3 + 1 + 1 + 7 + 11)
-"bbaab" : 3 (-3 - 3 + 1 + 1 - 3 + 11 + 7 - 4)
+"bbaab" : 3  (-3 - 3 + 1 + 1 - 3 + 11 + 7 - 4)
 ~~~
 
 As a result, we have established a mapping from the set of all strings of arbitrary length into the (real-valued) scores.
